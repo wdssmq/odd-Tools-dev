@@ -1,10 +1,3 @@
-export const index = () =>{
-    return {aa:8888}
-}
-
-
-export const index2 = () =>{
-    return {aa:9999}
-}
-
- 
+export * as unitPrice from "./tools/unit-price";
+export * as dateFormat from './tools/dateFormat';
+export * as uploadTools from './tools/upload';
