@@ -4,10 +4,11 @@
   "description": "奇思妙想工具箱",
   "main": "./lib/index.mjs",
   "type": "module",
+  "types": "./lib/types/index.d.ts",
   "scripts": {
     "dev": "npx rollup -wc rollup.config.dev.ts",
     "build": "npm run clean:dist && rollup -c",
-    "build:types": "npx tsc",
+    "build:types": "tsc -b ./tsconfig.types.json",
     "clean:deps": "rm -rf node_modules",
     "clean:dist": "rm -rf lib"
   },
