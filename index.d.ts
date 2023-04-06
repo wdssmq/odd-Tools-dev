@@ -1,0 +1,1 @@
+export declare function parseUrlParams(url: string): {[key: string]: string};

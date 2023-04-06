@@ -11,7 +11,7 @@ export default {
     input:"src/index.ts",
     output:[
         {file:pkg.exports.require,format:'cjs'},
-        {file:pkg.exports.import,form:"esm"}
+        {file:pkg.exports.import,format:"esm"}
     ],
     plugins:[typescript(
         {tsconfig:"./tsconfig.json",tsconfigOverride:override}
