@@ -12,7 +12,10 @@
     "clean:deps": "rm -rf node_modules",
     "clean:dist": "rm -rf lib"
   },
-  "keywords": ["js-tools","odd"],
+  "keywords": [
+    "js-tools",
+    "odd"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {

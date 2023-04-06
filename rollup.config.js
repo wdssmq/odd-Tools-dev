@@ -8,12 +8,12 @@ import pkg from './package.json' assert { type: 'json' };
 const override = { compilerOptions: { module: 'ESNext' } }
 
 export default {
-    input:"src/index.ts",
-    output:[
-        {file:pkg.exports.require,format:'cjs'},
-        {file:pkg.exports.import,format:"esm"}
-    ],
-    plugins:[typescript(
-        {tsconfig:"./tsconfig.json",tsconfigOverride:override}
-    ),commonjs(),terser()]
+  input: "src/index.ts",
+  output: [
+    { file: pkg.exports.require, format: 'cjs' },
+    { file: pkg.exports.import, format: "esm" }
+  ],
+  plugins: [typescript(
+    { tsconfig: "./tsconfig.json", tsconfigOverride: override }
+  ), commonjs(), terser()]
 }
