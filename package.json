@@ -6,8 +6,10 @@
   "type": "module",
   "scripts": {
     "dev": "npx rollup -wc rollup.config.dev.ts",
-    "build": "rollup -c",
-    "build:types": "npx tsc"
+    "build": "npm run clean:dist && rollup -c",
+    "build:types": "npx tsc",
+    "clean:deps": "rm -rf node_modules",
+    "clean:dist": "rm -rf lib"
   },
   "keywords": ["js-tools","odd"],
   "author": "",
