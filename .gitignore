@@ -1,5 +1,4 @@
-/node_modules
-/.npmignore
+node_modules
 lib
 src/**/*.js
 *.zip
