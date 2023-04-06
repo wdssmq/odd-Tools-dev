@@ -1,0 +1,10 @@
+test/
+src/
+rollup.config.js
+tsconfig.json
+tsconfig.types.json
+*.tar.gz
+*.tgz
+*.zip
+*.rar
+.*
